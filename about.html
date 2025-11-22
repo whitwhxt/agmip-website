@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - CalLMIP</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
@@ -24,13 +25,17 @@
                 <li class="dropdown">
                     <a href="phase1.html" class="nav-link">Protocol and Data</a>
                     <ul class="dropdown-menu">
-                        <li><a href="phase1.html">Phase 1</a></li>
-                        <li><a href="phase1-overview.html">Overview</a></li>
-                        <li><a href="phase1-getting-started.html">Getting Started</a></li>
-                        <li><a href="phase1-protocol.html">Protocol</a></li>
-                        <li><a href="phase1-data.html">Data</a></li>
-                        <li><a href="phase1-participants.html">Participants</a></li>
-                        <li><a href="phase1-coauthorship.html">Co-authorship</a></li>
+                        <li class="dropdown">
+                            <a href="phase1.html">Phase 1</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="phase1-overview.html">Overview</a></li>
+                                <li><a href="phase1-getting-started.html">Getting Started</a></li>
+                                <li><a href="phase1-protocol.html">Protocol</a></li>
+                                <li><a href="phase1-data.html">Data</a></li>
+                                <li><a href="phase1-participants.html">Participants</a></li>
+                                <li><a href="phase1-coauthorship.html">Co-authorship policy</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -61,7 +66,12 @@
             </header>
 
             <section class="content-section">
-                <p>CalLMIP is a new initiative led by members of the Analysis and Integration of Modeling Earth Systems (AIMES) Land Data Assimilation Working Group and the International Land Modeling Forum (ILMF) Parameter Estimation Working Group.</p>
+                <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(0, 206, 209, 0.05) 0%, rgba(127, 255, 212, 0.05) 100%); border-radius: 16px; border-left: 4px solid var(--primary-color);">
+                    <div style="font-size: 4rem; flex-shrink: 0;">🌱</div>
+                    <div>
+                        <p style="margin: 0; font-size: 1.1rem; line-height: 1.8;">CalLMIP is a new initiative led by members of the Analysis and Integration of Modeling Earth Systems (AIMES) Land Data Assimilation Working Group and the International Land Modeling Forum (ILMF) Parameter Estimation Working Group.</p>
+                    </div>
+                </div>
                 
                 <h2>Goals</h2>
                 <p>The overall goals envisaged for CalLMIP are:</p>
@@ -83,29 +93,97 @@
             <section class="content-section">
                 <h2>CalLMIP Steering Committee</h2>
                 
-                <h3>Dr Katie Dagon</h3>
-                <p>Dr Katie Dagon is a research scientist at the NSF National Center for Atmospheric Research (NCAR) in Boulder, Colorado. Her research focuses on modeling the impacts of climate change on land-atmosphere interactions and climate variability. She applies machine learning approaches to climate data to detect extreme weather events, understand climate predictions, and quantify uncertainty in model projections of climate change.</p>
-                
-                <h3>Dr Natalie Douglas</h3>
-                <p>Dr Natalie Douglas is a Postdoctoral Research Assistant to Prof. Tristan Quaife at the University of Reading and is funded by the National Centre for Earth Observation. Initially pursuing a career as a Teaching Fellow, Natalie joined the Meteorology Department at Reading in September 2021, she now primarily works with the carbon cycle using JULES (the Joint UK Land Environment Simulator) as well as performing Data Assimilation activities using 4DEnVar (or LAVENDAR). Natalie was a co-author on the 'Parameter estimation in land surface models: challenges and opportunities with data assimilation and machine learning' and is a member of the CalLMIP organising committee.</p>
-                
-                <h3>Dr Istem Fer</h3>
-                <p>Dr Istem Fer is a Senior Researcher at the Finnish Meteorological Institute (FMI). She specializes in computational and quantitative ecology, with an emphasis on improving process-based mechanistic simulators through model-data synthesis. Her recent work focuses on developing monitoring, reporting, and verification (MRV) systems for soil carbon stock changes and greenhouse gas emissions in managed ecosystems, with key contributions on scalable cyberinfrastructure for data assimilation and near-term ecological forecasting workflows.</p>
-                
-                <h3>Dr Linnia Hawkins</h3>
-                <p>Dr Linnia Hawkins is an Associate Research Scientist in the Learning the Earth with AI and Physics Center at Columbia University. Her research integrates observational constraints with process-based modeling and machine learning to advance understanding of climate-carbon feedbacks and improve projections of terrestrial ecosystem change under future climate scenarios.</p>
-                
-                <h3>Dr Jana Kolassa</h3>
-                <p>Dr Jana Kolassa is a Researcher in the Coupled Data Assimilation team at the European Centre for Medium-Range Weather Forecasts (ECMWF).</p>
-                
-                <h3>Dr Natasha MacBean</h3>
-                <p>Dr Natasha MacBean is an Associate Professor in the Department of Geography and Environment and the Department of Biology at Western University, Canada. Her research focuses on understanding and predicting carbon-water-vegetation interactions and their response to climate and environmental change. Much of her past work has focused on developing and applying carbon cycle data assimilation systems to constrain parametric uncertainty in carbon cycle budgets predicted by land surface models.</p>
-                
-                <h3>Dr Tristan Quaife</h3>
-                <p>Dr Tristan Quaife is Professor of Earth System Science at the University of Reading and the UK National Centre for Earth Observation (NCEO). His research focuses on building stronger linkages between land models and Earth Observation data. In particular, he works on developing novel data assimilation tools and improving observation operators using radiative transfer theory.</p>
-                
-                <h3>Dr Nina Raoult</h3>
-                <p>Dr Nina Raoult is a research scientist at ECMWF, specialising in land surface modelling, parameter estimation, and machine learning. She currently contributes to the Destination Earth initiative, where she works on developing a data-driven Earth system model with a focus on the land component. She previously held an ESA CCI fellowship at LSCE in France and a Marie Curie fellowship at the University of Exeter, working with a range of observational datasets and data assimilation methods to reduce parametric uncertainty in a number of land surface models. Although awarded a Royal Society fellowship in 2024, she chose instead to join ECMWF where she contributes to the anemoi framework and expands the machine-learning toolkit for land surface modelling. In addition to serving on the CalLMIP organising committee, Nina is a member of the ML4LM (Machine Learning for Land Modelling) organising committee, co-organised the International Land Modeling Forum's webinar on parameter estimation and uncertainty quantification, and led a key community paper on machine-learning approaches for parameter estimation in land surface modelling.</p>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/Dagon_photo.JPG" alt="Dr Katie Dagon">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Katie Dagon</h3>
+                            <p>Dr Katie Dagon is a research scientist at the NSF National Center for Atmospheric Research (NCAR) in Boulder, Colorado. Her research focuses on modeling the impacts of climate change on land-atmosphere interactions and climate variability. She applies machine learning approaches to climate data to detect extreme weather events, understand climate predictions, and quantify uncertainty in model projections of climate change.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/NDouglas.jpg" alt="Dr Natalie Douglas">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Natalie Douglas</h3>
+                            <p>Dr Natalie Douglas is a Postdoctoral Research Assistant to Prof. Tristan Quaife at the University of Reading and is funded by the National Centre for Earth Observation. Initially pursuing a career as a Teaching Fellow, Natalie joined the Meteorology Department at Reading in September 2021, she now primarily works with the carbon cycle using JULES (the Joint UK Land Environment Simulator) as well as performing Data Assimilation activities using 4DEnVar (or LAVENDAR). Natalie was a co-author on the 'Parameter estimation in land surface models: challenges and opportunities with data assimilation and machine learning' and is a member of the CalLMIP organising committee.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/IstemFer.jpg" alt="Dr Istem Fer">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Istem Fer</h3>
+                            <p>Dr Istem Fer is a Senior Researcher at the Finnish Meteorological Institute (FMI). She specializes in computational and quantitative ecology, with an emphasis on improving process-based mechanistic simulators through model-data synthesis. Her recent work focuses on developing monitoring, reporting, and verification (MRV) systems for soil carbon stock changes and greenhouse gas emissions in managed ecosystems, with key contributions on scalable cyberinfrastructure for data assimilation and near-term ecological forecasting workflows.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/Hawkins_headshot2023.jpg" alt="Dr Linnia Hawkins">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Linnia Hawkins</h3>
+                            <p>Dr Linnia Hawkins is an Associate Research Scientist in the Learning the Earth with AI and Physics Center at Columbia University. Her research integrates observational constraints with process-based modeling and machine learning to advance understanding of climate-carbon feedbacks and improve projections of terrestrial ecosystem change under future climate scenarios.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/Jana_Kolassa.jpg" alt="Dr Jana Kolassa">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Jana Kolassa</h3>
+                            <p>Dr Jana Kolassa is a Researcher in the Coupled Data Assimilation team at the European Centre for Medium-Range Weather Forecasts (ECMWF).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/NMacBean.jpg" alt="Dr Natasha MacBean">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Natasha MacBean</h3>
+                            <p>Dr Natasha MacBean is an Associate Professor in the Department of Geography and Environment and the Department of Biology at Western University, Canada. Her research focuses on understanding and predicting carbon-water-vegetation interactions and their response to climate and environmental change. Much of her past work has focused on developing and applying carbon cycle data assimilation systems to constrain parametric uncertainty in carbon cycle budgets predicted by land surface models.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/Raj.jpg" alt="Dr Raj S. N. Deepak">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Raj S. N. Deepak</h3>
+                            <p>Dr. Raj S. N. Deepak is a Postdoctorate Associate at Western University, Canada who works with Dr. MacBean. His research focuses on improving terrestrial carbon, water, and turbulent energy fluxes. He has previously worked on identifying influential parameters using qualitative and quantitative global sensitivity analysis (GSA) where a Land Surface Model (LSM) was forced with different climatic conditions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/tquaife.jpg" alt="Dr Tristan Quaife">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Tristan Quaife</h3>
+                            <p>Dr Tristan Quaife is Professor of Earth System Science at the University of Reading and the UK National Centre for Earth Observation (NCEO). His research focuses on building stronger linkages between land models and Earth Observation data. In particular, he works on developing novel data assimilation tools and improving observation operators using radiative transfer theory.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="team-member-image">
+                            <img src="assets/img/NRaoult.jpg" alt="Dr Nina Raoult">
+                        </div>
+                        <div class="team-member-info">
+                            <h3>Dr Nina Raoult</h3>
+                            <p>Dr Nina Raoult is a research scientist at ECMWF, specialising in land surface modelling, parameter estimation, and machine learning. She currently contributes to the Destination Earth initiative, where she works on developing a data-driven Earth system model with a focus on the land component. She previously held an ESA CCI fellowship at LSCE in France and a Marie Curie fellowship at the University of Exeter, working with a range of observational datasets and data assimilation methods to reduce parametric uncertainty in a number of land surface models. Although awarded a Royal Society fellowship in 2024, she chose instead to join ECMWF where she contributes to the anemoi framework and expands the machine-learning toolkit for land surface modelling. In addition to serving on the CalLMIP organising committee, Nina is a member of the ML4LM (Machine Learning for Land Modelling) organising committee, co-organised the International Land Modeling Forum's webinar on parameter estimation and uncertainty quantification, and led a key community paper on machine-learning approaches for parameter estimation in land surface modelling.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -114,7 +192,7 @@
         <div class="container">
             <p>&copy; <span id="current-year"></span> CalLMIP - Calibrated Land Model Intercomparison Project</p>
             <p>For questions and inquiries, please contact the project administrators.</p>
-            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">CalLMIP is supported by the <a href="https://agmip.org" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.95); text-decoration: underline;">Agricultural Model Intercomparison and Improvement Project (AGMIP)</a> for hosting and collaboration.</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">Website designed and developed by <a href="#" style="color: rgba(255,255,255,0.95); text-decoration: underline;">Whitney Onoberhie</a>.</p>
         </div>
     </footer>
 
